@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Zafri's App</title>
+    <title>Zafri's App </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,11 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    This is Zafri's Project
+                    This is Zafri's Project {{ config('staticdata.mett_weather_api') }}
                 </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
+                    <pre>{{ json_encode($data, JSON_PRETTY_PRINT) }}</pre>
                 </div>
             </div>
         </div>

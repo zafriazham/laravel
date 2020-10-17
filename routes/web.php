@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'I want to learn to test something';
+    // return view('welcome');
+});
+
+Route::group(['prefix' => 'cuaca'], function () {
+    Route::get('/', 'WebController@displayData')->name('get');
 });
